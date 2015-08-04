@@ -1,0 +1,56 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>magenta.png</file>
+        <file>orange.png</file>
+        <file>springgreen.png</file>
+        <file>yellow.png</file>
+        <file>eraser.png</file>
+        <file>poly_index_module.png</file>
+        <file>poly_mu_module.png</file>
+        <file>list_marker.png</file>
+        <file>list_marker_on.png</file>
+        <file>monoalphabetic.png</file>
+        <file>poly_analyze_module.png</file>
+        <file>start_from (1).png</file>
+        <file>start_from (2).png</file>
+        <file>fon.png</file>
+        <file>export.png</file>
+        <file>import.png</file>
+        <file>exit.png</file>
+        <file>close_all.png</file>
+        <file>mono.png</file>
+        <file>poly.png</file>
+        <file>autor.png</file>
+        <file>about.png</file>
+        <file>program_ico.png</file>
+        <file>program_ico.ico</file>
+        <file>ct.png</file>
+        <file>polyw.png</file>
+        <file>monow.png</file>
+        <file>close_tab.png</file>
+        <file>cryptot0.png</file>
+        <file>cryptot1.png</file>
+        <file>cryptot2.png</file>
+        <file>cryptot3.png</file>
+        <file>cryptot4.png</file>
+        <file>cryptot5.png</file>
+        <file>cryptot6.png</file>
+        <file>cryptot7_.png</file>
+        <file>cryptot7.png</file>
+        <file>about_t2.png</file>
+        <file>autor_t2.png</file>
+        <file>close_all_t2.png</file>
+        <file>close_tab_t2.png</file>
+        <file>exit_t2.png</file>
+        <file>export_t2.png</file>
+        <file>mono_t2.png</file>
+        <file>poly_t2.png</file>
+        <file>marker.png</file>
+        <file>next.png</file>
+        <file>not_found.png</file>
+        <file>import_t2.png</file>
+        <file>list.png</file>
+        <file>guide.png</file>
+        <file>create.png</file>
+    </qresource>
+</RCC>

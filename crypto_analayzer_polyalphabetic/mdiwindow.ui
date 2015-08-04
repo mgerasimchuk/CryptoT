@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MDIWindow</class>
+ <widget class="QMainWindow" name="MDIWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rec.qrc">
+    <normaloff>:/img/ct.png</normaloff>:/img/ct.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>766</width>
+      <height>515</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="viewMode">
+     <enum>QMdiArea::SubWindowView</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>786</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>Создать проект</string>
+     </property>
+     <property name="icon">
+      <iconset resource="rec.qrc">
+       <normaloff>:/img/create.png</normaloff>:/img/create.png</iconset>
+     </property>
+     <addaction name="mono"/>
+     <addaction name="poly"/>
+    </widget>
+    <addaction name="menu_2"/>
+    <addaction name="open_project"/>
+    <addaction name="separator"/>
+    <addaction name="close_tab"/>
+    <addaction name="close_all"/>
+    <addaction name="separator"/>
+    <addaction name="action_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>Панель инструментов</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="open_project"/>
+   <addaction name="separator"/>
+   <addaction name="mono"/>
+   <addaction name="poly"/>
+   <addaction name="separator"/>
+   <addaction name="close_tab"/>
+   <addaction name="close_all"/>
+   <addaction name="separator"/>
+   <addaction name="action_3"/>
+   <addaction name="separator"/>
+   <addaction name="about"/>
+  </widget>
+  <action name="open_project">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/img/import.png</normaloff>:/img/import.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть проект</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="mono">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/img/mono.png</normaloff>:/img/mono.png</iconset>
+   </property>
+   <property name="text">
+    <string>Анализ моноалфавитных шифров</string>
+   </property>
+   <property name="toolTip">
+    <string>Анализ моноалфавитных шифров</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="poly">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/img/poly.png</normaloff>:/img/poly.png</iconset>
+   </property>
+   <property name="text">
+    <string>Анализ полиалфавитных шифров</string>
+   </property>
+   <property name="toolTip">
+    <string>Анализ полиалфавитных шифров</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/img/exit.png</normaloff>:/img/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="close_all">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/img/close_all.png</normaloff>:/img/close_all.png</iconset>
+   </property>
+   <property name="text">
+    <string>Закрыть все проекты</string>
+   </property>
+   <property name="toolTip">
+    <string>Закрыть все проекты</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+W</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/img/about.png</normaloff>:/img/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+   <property name="toolTip">
+    <string>О программе</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="close_tab">
+   <property name="icon">
+    <iconset resource="rec.qrc">
+     <normaloff>:/img/close_tab.png</normaloff>:/img/close_tab.png</iconset>
+   </property>
+   <property name="text">
+    <string>Закрыть актвиный проект</string>
+   </property>
+   <property name="toolTip">
+    <string>Закрыть активный проект</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>
